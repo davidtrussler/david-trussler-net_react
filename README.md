@@ -1,6 +1,6 @@
-# SportsStore app
+# david-trussler-net_react
 
-This is based on Chapters 5 - 8 of Pro React 16 by Adam Freeman.
+This is an implementation of my personal website built with React.
 
 ## Prerequisites
 
