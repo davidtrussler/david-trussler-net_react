@@ -1,19 +1,20 @@
 import React, {Component} from 'react';
 
-export class Footer extends Component {
-	render = () => 
-      <footer>
-        <div class="constrained">
-          <div class="footer__inner">
-            <nav>
-              <ul class="footer__links">
-                <li class="footer__linkitem"><a href="https://www.linkedin.com/in/dtrussler/" target="_blank">LinkedIn</a></li>
-                <li class="footer__linkitem"><a href="https://github.com/davidtrussler" target="_blank">GitHub</a></li>
-              </ul>
-            </nav>
+export function Footer(props) {
+  return (
+    <footer>
+      <div className="constrained">
+        <div className="footer__inner">
+          <nav>
+            <ul className="footer__links">
+              <li key={props.links[0]} className="footer__linkitem"><a href={props.urls[0]} target="_blank">{props.links[0]}</a></li>
+              <li key={props.links[1]} className="footer__linkitem"><a href={props.urls[1]} target="_blank">{props.links[1]}</a></li>
+            </ul>
+          </nav>
 
-            <p>&#169; David Trussler 2020</p>
-          </div>
+          <p>&#169; David Trussler 2020</p>
         </div>
-      </footer>
+      </div>
+    </footer>
+  )
 }

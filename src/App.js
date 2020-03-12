@@ -6,11 +6,14 @@ import {Footer} from './components/Footer';
 
 function App() {
   return (
-    <>
+    <React.Fragment>
       <Header/>
       <Main/>
-      <Footer/>
-    </>
+      <Footer 
+      	urls = {['https://www.linkedin.com/in/dtrussler/', 'https://github.com/davidtrussler']}
+      	links = {['LinkedIn', 'GitHub']}
+      />
+    </React.Fragment>
   );
 }
 
