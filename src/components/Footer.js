@@ -1,4 +1,17 @@
 import React, {Component} from 'react';
+import {Anchor} from './Anchor'; 
+
+function footerLinks(props) {
+  let arrayElems = []; 
+
+  for (let i = 0; i < props.urls.length;  i++) {
+    arrayElems.push(
+      <Anchor href={props.urls[i]} link={props.links[i]}/>
+    )
+  }
+
+  return arrayElems; 
+}
 
 export function Footer(props) {
   return (
@@ -7,8 +20,7 @@ export function Footer(props) {
         <div className="footer__inner">
           <nav>
             <ul className="footer__links">
-              <li key={props.links[0]} className="footer__linkitem"><a href={props.urls[0]} target="_blank">{props.links[0]}</a></li>
-              <li key={props.links[1]} className="footer__linkitem"><a href={props.urls[1]} target="_blank">{props.links[1]}</a></li>
+              {footerLinks(props)}
             </ul>
           </nav>
 
