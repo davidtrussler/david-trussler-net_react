@@ -1,13 +1,12 @@
 import React, {Component} from 'react';
+import {Image} from './Image'; 
 
 export class Main extends Component {
 	render = () => 
 	  <main>
 	    <div className="constrained">
 	      <div className="main__inner">
-	        <div className="img_main">
-	          <img src="images/nye_19_464.jpg" alt="David Trussler"/>
-	        </div>
+	      	<Image fileName="nye_19_464.jpg" alt="David Trussler"/>
 
 	        <p>I am a Frontend Web Developer based in Coventry and London. I&#8217;m also a runner of half and full marathons, an occasional musician (improvised reeds and electronics), a supporter of the football teams of Coventry City and Wales and a sometime commentator on politics.</p>
 
