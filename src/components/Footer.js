@@ -6,7 +6,9 @@ function footerLinks(props) {
 
   for (let i = 0; i < props.urls.length;  i++) {
     arrayElems.push(
-      <Anchor href={props.urls[i]} link={props.links[i]} key={"footer__linkitem-" + i}/>
+      <li className="footer__linkitem" key={"footer__linkitem-" + i}>
+        <Anchor href={props.urls[i]} link={props.links[i]} target="_blank"/>
+      </li>
     )
   }
 

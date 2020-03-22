@@ -2,11 +2,13 @@ import React from 'react';
 
 export function Anchor(props) {
 	return (
-		<li className="footer__linkitem">
 			<a 
 				href={props.href}
-				target="_blank"
+				target={props.target}
 			>{props.link}</a>
-		</li>
 	)
+}
+
+Anchor.defaultProps = {
+	target: '_self'
 }
