@@ -1,13 +1,13 @@
 import React, {Component} from 'react';
+import {Image} from './Image'; 
+import {Anchor} from './Anchor'; 
 
 export class Main extends Component {
 	render = () => 
 	  <main>
 	    <div className="constrained">
 	      <div className="main__inner">
-	        <div className="img_main">
-	          <img src="images/nye_19_464.jpg" alt="David Trussler"/>
-	        </div>
+	      	<Image fileName="nye_19_464.jpg" alt="David Trussler"/>
 
 	        <p>I am a Frontend Web Developer based in Coventry and London. I&#8217;m also a runner of half and full marathons, an occasional musician (improvised reeds and electronics), a supporter of the football teams of Coventry City and Wales and a sometime commentator on politics.</p>
 
@@ -19,7 +19,7 @@ export class Main extends Component {
 
 	        <p>I&#8217;m keen to use modern technology to help online users enrich and better their lives with well-designed tools and accessible information. I&#8217;m passionate about being involved at every stage of the process, collaborating with a wide range of other team members to solve problems and push for the most effective way to achieve results.</p>
 
-	        <p>I currently work at the <a href="https://www.moneyadviceservice.org.uk" target="_blank">Money Advice Service</a>, where my key achievements have been</p>
+	        <p>I currently work at the <Anchor href="https://www.moneyadviceservice.org.uk" target="_blank" link="Money Advice Service"/>, where my key achievements have been</p>
 
 	        <ul className="bullet-list">
 	          <li>playing a major role in gaining and maintaining the accreditation of AA level accessibility of the public site</li>
