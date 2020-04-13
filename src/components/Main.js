@@ -1,9 +1,9 @@
-import React, {Component} from 'react';
+import React from 'react';
 import {Image} from './Image'; 
 import {Anchor} from './Anchor'; 
 
-export class Main extends Component {
-	render = () => 
+export function Main() {
+	return (
 	  <main>
 	    <div className="constrained">
 	      <div className="main__inner">
@@ -49,4 +49,5 @@ export class Main extends Component {
 	      </div>
 	    </div>
 	  </main>
+  )
 }
