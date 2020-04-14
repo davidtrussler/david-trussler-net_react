@@ -4,19 +4,35 @@ This is an implementation of my personal website built with React.
 
 ## Prerequisites
 
-- [Node.js](https://nodejs.org/) - version 10.14.1
+- [Node.js](https://nodejs.org/)
 - [Git](http://git-scm.com/)
 
 ## To clone and set up the project locally
 
-- `git clone https://github.com/davidtrussler/Pro-React-16_sportsstore.git`
-- `cd Pro-React-16_sportsstore`
+- `git clone https://github.com/davidtrussler/david-trussler-net_react.git`
+- `cd david-trussler-net_react`
 - `npm install`
-- `npm start`
+- `npm start`: runs the app in the development mode
 
-`npm start` runs the app in the development mode. The page will reload if you make edits.
+====
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### `npm run build`
+
+Builds the app for production to the `build` folder.<br />
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.<br />
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### Deployment
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+
+### `npm run build` fails to minify
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
 
 ====
 
@@ -36,16 +52,6 @@ You will also see any lint errors in the console.
 
 Launches the test runner in the interactive watch mode.<br />
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
 ### `npm run eject`
 
@@ -79,10 +85,3 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/ma
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
 
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
